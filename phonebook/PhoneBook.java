@@ -1,16 +1,36 @@
 package phonebook;
 
 
-import phonebook.PhoneBook;
+import java.io.*;
 
 class PhoneBook
 {
-	public static void main(String[] args)
+
+	public static void main(String[] args) throws IOException
 	{
 		String[] strArrName = new String[10000];
 		KeyboardInput inputKey = new KeyboardInput();
-		strArrName[0] = inputKey.scanInput(); 
-		System.out.println(strArrName[0]);
+
+		int aa = 0;
+		int intIndex; 
+		for(intIndex = 0; intIndex < 10000; intIndex++){
+			String str = "";
+			str = inputKey.systemInput();
+			System.out.println(intIndex + "  " + str);
+
+			if(str.length() == 0)
+				break;
+			else
+				strArrName[intIndex] = str; 
+		}
+
+		for(intIndex = 0; intIndex < 10000; intIndex++){
+
+			if(strArrName[intIndex] == null)
+				break;
+			else 
+				System.out.println(strArrName[intIndex]);
+		}
 	}
 }
 
