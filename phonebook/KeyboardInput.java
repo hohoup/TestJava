@@ -4,7 +4,7 @@ package phonebook;
 import java.util.Scanner;
 import java.io.*;
 
-public class KeyboardInput
+class KeyboardInput
 {
 	public String scanInput() throws IOException
 	{
