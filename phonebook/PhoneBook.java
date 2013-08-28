@@ -11,7 +11,6 @@ class PhoneBook
 		String[] strArrName = new String[10000];
 		KeyboardInput inputKey = new KeyboardInput();
 
-		int aa = 0;
 		int intIndex; 
 		for(intIndex = 0; intIndex < 10000; intIndex++){
 			String str = "";
