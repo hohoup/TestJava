@@ -6,7 +6,7 @@ import java.io.*;
 
 class KeyboardInput
 {
-	public String scanInput() throws IOException
+	String scanInput() throws IOException
 	{
 		String str="";
 		Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ class KeyboardInput
 		return str; 
 	}
 
-	public String systemInput() throws IOException
+	String systemInput() throws IOException
 	{
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);
