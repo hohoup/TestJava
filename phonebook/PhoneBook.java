@@ -31,9 +31,6 @@ class PhoneBook
 				System.out.println(strArrName[intIndex]);
 		}
 
-		int $test;
-		$test = 123;
-		System.out.println("$test"+"  "+$test);
 	}
 }
 
