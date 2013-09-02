@@ -8,15 +8,14 @@
 	some information (name, phonenumber and memo(about 10 sentances))
 
 (scenarios)
-	1. start showing summary, number of name, phonenumber, memo 
-	2. show main menu 
-			input, search
-	3. show sub menu
+	1. show main menu 
+			input, search, 
+	2. show sub menu
 			input menu
 				name, phonenumber
 			search menu
 				name, phonenumber
-	4. deletable after selecting a field (name + phonenumber + memo)
+	3. deletable after selecting a field (name + phonenumber + memo)
 
 
 (non goals)
@@ -32,7 +31,6 @@
 -------------------------------------------------------------------
 
 (class)
-	entry (main)
 
 
 
