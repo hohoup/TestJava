@@ -5,30 +5,48 @@ import java.io.*;
 
 class PhoneBook
 {
-
 	public static void main(String[] args) throws IOException
 	{
-		String[] strArrName = new String[10000];
-		KeyboardInput inputKey = new KeyboardInput();
+		String str = "";
+		int i = -1;
 
-		int intIndex; 
-		for(intIndex = 0; intIndex < 10000; intIndex++){
-			String str = "";
-			str = inputKey.systemInput();
-			System.out.println(intIndex + "  " + str);
+		System.out.println("================================");
+		System.out.println("   1. input						");
+		System.out.println("   2. search					");
+		System.out.println("   3. show list					");
+		System.out.println("   4. exit						");
+		System.out.println("================================");
 
-			if(str.length() == 0)
-				break;
-			else
-				strArrName[intIndex] = str; 
+		KeyboardInput in = new KeyboardInput();
+		try {
+		str = in.scanInput();
+		i = Integer.parseInt(str);
+		} catch (NumberFormatException nfe) {
+			System.err.println(nfe);
+			System.exit(1);
 		}
 
-		for(intIndex = 0; intIndex < 10000; intIndex++){
+		switch(i)
+		{
+			case 1:
+				System.out.println(i + " : case 1");	
+			break;
 
-			if(strArrName[intIndex] == null)
-				break;
-			else 
-				System.out.println(strArrName[intIndex]);
+			case 2:
+				System.out.println(i + " : case 2");	
+			break;
+
+			case 3:
+				System.out.println(i + " : case 3");	
+			break;
+
+			case 4:
+				System.out.println(i + " : case 4");	
+			break;
+
+			default:
+				System.out.println(i + " : case default");	
+			break;
 		}
 
 	}
