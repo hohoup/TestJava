@@ -26,6 +26,12 @@
 
 (entry scene)
 
+(excute)
+javac phonebook/PhoneBookMain.java
+java -Djava.library.path=./phonebook/ phonebook/PhoneBook
+
+build libClearConsole.so
+gcc -fPIC -o libClearConsole.so -shared -I/$JDK6/include -I/$JDK6/include/linux phonebook_MyConsole.c
 -------------------------------------------------------------------
 [implementation]
 -------------------------------------------------------------------
