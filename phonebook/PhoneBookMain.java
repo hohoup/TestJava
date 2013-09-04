@@ -14,7 +14,8 @@ class PhoneBook
 		System.out.println("   1. input");
 		System.out.println("   2. search");
 		System.out.println("   3. show list");
-		System.out.println("   4. exit");
+		System.out.println("   4. delete");
+		System.out.println("   5. exit");
 		System.out.println("==========================================");
 	}
 
@@ -75,6 +76,13 @@ class PhoneBook
 			databook.getFields(cnt);
 	}
 
+	/*
+	private int deleteData(String str)
+	{
+
+	}
+	*/
+
 	private String scanConsoleInput()
 	{
 		KeyboardInput in = new KeyboardInput();
@@ -118,6 +126,11 @@ class PhoneBook
 				break;
 	
 				case 4:
+					System.out.println("this function Not yet imp.");
+					//mainbook.deleteData();
+				break;
+
+				case 5:
 					System.exit(1);
 				break;
 	
@@ -130,12 +143,4 @@ class PhoneBook
 
 }
 
-class MyConsole
-{
-	static {
-		System.loadLibrary("ClearConsole");
-	}
 
-	public native static void clearConsole();
-		
-}
