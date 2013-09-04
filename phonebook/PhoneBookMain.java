@@ -75,7 +75,7 @@ class PhoneBook
 			databook.getFields(cnt);
 	}
 
-	public String scanConsoleInput()
+	private String scanConsoleInput()
 	{
 		KeyboardInput in = new KeyboardInput();
 		try{
@@ -97,7 +97,6 @@ class PhoneBook
 		myconsole.clearConsole();
 
 		PhoneBook mainbook = new PhoneBook();
-
 		while(true)
 		{
 			mainbook.showMainMenu();
